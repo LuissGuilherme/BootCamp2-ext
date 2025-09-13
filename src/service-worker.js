@@ -24,7 +24,7 @@ chrome.alarms.onAlarm.addListener((alarm) => {
         // Cria uma notificação no desktop
         chrome.notifications.create("drinkWaterNotif", {
             type: "basic",
-            iconUrl: "images/icon128.png",
+            iconUrl: "/images/icon128.png",
             title: "Hora de Beber Água!",
             message: "Uma pequena pausa para se hidratar.",
             priority: 2

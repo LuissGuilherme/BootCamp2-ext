@@ -1,14 +1,12 @@
 {
   "manifest_version": 3,
   "name": "Lembrete para Beber Água",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Um lembrete para você se manter hidratado a cada 2 horas.",
-  "icons": {
-     "16": "images/icon16.png",
-     "32": "images/icon32.png",
-     "48": "images/icon48.png",
-     "128": "images/icon128.png"
-  },
+  "permissions": [
+    "alarms",
+    "notifications"
+  ],
   "action": {
     "default_popup": "src/popup.html",
     "default_icon": {
@@ -21,8 +19,16 @@
   "background": {
     "service_worker": "src/service-worker.js"
   },
-   "permissions": [
-    "alarms",
-    "notifications"
-  ]
+  "web_accessible_resources": [
+    {
+      "resources": [ "images/*.png" ],
+      "matches": [ "<all_urls>" ]
+    }
+  ],
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
 }

@@ -1,0 +1,10 @@
+title: Lembrete para Beber Água
+
+
+description: Uma extensão simples para o Google Chrome que ajuda você a se lembrar de beber água.
+
+theme: jekyll-theme-minimal
+
+github:
+  repository_url: https://github.com/LuissGuilherme/BootCamp2-ext.git
+  is_project_page: true
