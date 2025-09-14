@@ -8,8 +8,8 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.command === "start") {
         // Cria um alarme que dispara a cada 2 horas 
         chrome.alarms.create("drinkWaterAlarm", {
-            delayInMinutes: 1,
-            periodInMinutes: 1
+            delayInMinutes: 120,
+            periodInMinutes: 120
         });
     } else if (request.command === "stop") {
         // Limpa o alarme
