@@ -45,14 +45,13 @@ Uma extensão simples para Google Chrome que lembra o usuário de tomar água a 
 │   ├──  icon48.png
 │   ├──  icon128.png
 │   ├──  Lembrete.png
-│   ├──  Notificacao.png
-│   └── screenshot.png (Opcional: para o site)
+│   └──  Notificacao.png
 │
 └──  src/
 │    ├──  popup.html
 │    ├──  popup.js
 │    ├──  service-worker.js
-│    └── 📄 style.css
+│    └──  style.css
 │
 └──  css/
       ├──  style.css
