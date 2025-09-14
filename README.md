@@ -64,5 +64,5 @@ Uma extensão simples para Google Chrome que lembra o usuário de tomar água a 
 
 ## Pages
 
-O projeto possui uma versão no [GitHub Pages](src/index.md).  
+O projeto possui uma versão no [GitHub Pages](/index.md).  
 Para visualizar, acesse a aba Pages.
