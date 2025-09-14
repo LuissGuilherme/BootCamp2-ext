@@ -12,7 +12,7 @@ layout: default
 Uma extensão simples para o Google Chrome que ajuda você a se manter hidratado ao longo do dia.
 
 <p align="center">
-  <a href="https://github.com/LuissGuilherme/BootCamp2-ext/archive/refs/heads/main.zip" class="btn">Baixar Extensão (.zip)</a>
+  <a href="https://github.com/LuissGuilherme/BootCamp2-ext/releases/download/v1.0.0/BootCamp2-ext-v1.0.0.zip" class="btn">Baixar Extensão (.zip)</a>
 </p>
 
 ---
