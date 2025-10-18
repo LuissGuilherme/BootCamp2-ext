@@ -1,0 +1,45 @@
+name: CI
+
+on:
+    push:
+        branches: [main]
+    pull request:
+        branches: [main]
+    workflow_dispatch:
+
+jobs:
+    test_build:
+        runs-on: ubuntu-latest
+        steps:
+            -uses: actions/checkout@v4
+
+            -uses:actions/setup-node@v4
+            with:
+                node-version: '22'
+                cache: npm
+
+            -name: Instalar dependências
+            run: npm ci
+
+            -name: Instalar Playwright (Chromium + deps)
+            run: npx playwright Install --with-deps chromium 
+
+            -name: Build extensão
+            run: npm run build
+
+            -name: Teste e2e
+            run: xvfb-run -a -npm run test:e2e
+
+            -name: Publicar o relatório HTML do teste
+            if: always()
+            uses: actions/upload-artifact@v4
+            with:
+                nome: playwright-report
+                path: playwright-report
+            
+            -name: Publicar o pacote da extensão (ZIP)
+            if: always()
+            uses: actions/upload-artifact@v4
+            with:
+                name: extension-zip
+                path: dist/lembrete-agua.zip
